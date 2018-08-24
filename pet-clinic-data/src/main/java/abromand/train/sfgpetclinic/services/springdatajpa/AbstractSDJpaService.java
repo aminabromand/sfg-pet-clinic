@@ -1,7 +1,6 @@
 package abromand.train.sfgpetclinic.services.springdatajpa;
 
 import abromand.train.sfgpetclinic.model.BaseEntity;
-import abromand.train.sfgpetclinic.model.Owner;
 import abromand.train.sfgpetclinic.services.CrudService;
 import org.springframework.data.repository.CrudRepository;
 
