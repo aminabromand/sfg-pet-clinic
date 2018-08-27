@@ -4,9 +4,11 @@ import abromand.train.sfgpetclinic.model.Speciality;
 import abromand.train.sfgpetclinic.model.Vet;
 import abromand.train.sfgpetclinic.services.SpecialityService;
 import abromand.train.sfgpetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private SpecialityService specialityService;

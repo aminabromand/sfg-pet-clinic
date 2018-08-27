@@ -2,9 +2,11 @@ package abromand.train.sfgpetclinic.services.map;
 
 import abromand.train.sfgpetclinic.model.Visit;
 import abromand.train.sfgpetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService{
 	public Visit save(Visit visit) {
 		if(visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null
