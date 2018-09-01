@@ -20,7 +20,7 @@
         <developerConnection>scm:git:https://github.com/aminabromand/sfg-pet-clinic.git</developerConnection>
         <url>https://github.com/aminabromand/sfg-pet-clinic.git</url>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
