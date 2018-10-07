@@ -8,9 +8,7 @@ import abromand.train.sfgpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
+import java.util.List;
 
 @Service
 @Profile( "springdatajpa" )
@@ -27,6 +25,11 @@ public class OwnerSDJpaService extends AbstractSDJpaService<Owner, Long> impleme
 
 	@Override public Owner findByLastName( String lastName ){
 		return ((OwnerRepository)crudRepository).findByLastName( lastName );
+	}
+
+	@Override
+	public List<Owner> findAllByLastNameLike(String lastName) {
+		return ((OwnerRepository)crudRepository).findAllByLastNameLike(lastName);
 	}
 
 //	@Override public Set<Owner> findAll(){
