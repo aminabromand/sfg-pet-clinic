@@ -22,4 +22,8 @@ public class PetType extends BaseEntity {
         super(id);
         this.name = name;
     }
+
+    public String toString() {
+    	return name;
+	}
 }
