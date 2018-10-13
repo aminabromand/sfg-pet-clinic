@@ -41,4 +41,9 @@ public class Pet extends BaseEntity {
         this.birthDate = birthDate;
         if (visits != null) this.visits = visits;
     }
+
+    public void addVisit(Visit visit) {
+        visit.setPet(this);
+        this.visits.add(visit);
+    }
 }
