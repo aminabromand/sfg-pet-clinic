@@ -14,6 +14,7 @@ import java.time.LocalDate;
 @Table(name = "visits")
 public class Visit extends BaseEntity {
 
+
 	@Column(name = "date")
     private LocalDate date;
 
